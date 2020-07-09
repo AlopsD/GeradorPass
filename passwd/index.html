@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="gerar">
+            <p class="titulo">Gerador</p>
+            <label>Tamanho: 
+                <input type="number" class="tam" value="" id="inputTamanho">
+            </label>
+
+            <input type="button" value="Gerar" class="tamb" onclick="gerar()">
+
+        </div>
+
+        <div class="option">
+            <p class="titulo">Adcionar caracteres</p>
+            <label class="container">Numero
+                <input type="checkbox" checked="checked" id="Num" checked value="">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Alfabeto Maiusculo
+                <input type="checkbox" id="Alfama" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Alfabeto Minusculo
+                <input type="checkbox" id="Alfami" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Simbolos
+                <input type="checkbox" id="Simb" checked>
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="popup" id="popups">
+    </div>
+    <script>
+    </script>
+</body>
+</html>
