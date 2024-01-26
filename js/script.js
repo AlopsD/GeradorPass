@@ -1,16 +1,19 @@
 var continuar = false
 var resulpass = ''
+
+
+//used in the close button
 function sair(){
     document.getElementById('popups').style.display="none"
 }
-
+//used to confirm
 function confirma(){
     continuar = true
     document.getElementById('popups').style.display="none"
     gerar()
 }
 
-
+//general function where it receives output information from the functions below
 function gerar(){
     const input_Tamanho = document.getElementById('inputTamanho').value
 
@@ -32,7 +35,7 @@ function gerar(){
     }
 
 
-
+    //create a popup notification on the screen
     function alertHtml(numero){
         let alertId = numero
         switch (alertId) {
@@ -67,7 +70,7 @@ function gerar(){
 
 
 
-
+    //choose the types of characters that will be contained in the password
     function AdcCaracters(){
 
         let saidatexto = ''
@@ -96,7 +99,7 @@ function gerar(){
         }
     }
 
-
+    //used to choose string size
     function TamanhoString(){
 
         if (input_Tamanho == '' | input_Tamanho < 4){
@@ -119,7 +122,7 @@ function gerar(){
         }
 
     }
-
+    // Generates characters to create passwords
     function GeradorDeTexto(tamanho, Caracter){
         //let Caracter = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -148,7 +151,7 @@ function gerar(){
 
 }
 
-
+//used to copy the text that appears in the popup
 function Copiar(){
     let copiarpass = document.getElementById('senhaGerada')
     copiarpass.select()
