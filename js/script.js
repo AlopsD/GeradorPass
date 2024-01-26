@@ -17,8 +17,8 @@ function confirma(){
 function gerar(){
     const input_Tamanho = document.getElementById('inputTamanho').value
 
-    const input_alfami = document.getElementById('Alfama')
-    const input_alfama = document.getElementById('Alfami')
+    const input_alfami = document.getElementById('Alfami')
+    const input_alfama = document.getElementById('Alfama')
     const input_num = document.getElementById('Num')
     const input_simb = document.getElementById('Simb')
     var divPopup = document.getElementById('popups')
