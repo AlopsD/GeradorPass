@@ -153,10 +153,7 @@ function gerar(){
 //used to copy the text that appears in the popup
 function Copiar(){
     let copiarpass = document.getElementById('senhaGerada')
-    copiarpass.select()
-    document.execCommand("copy")
-    console.log(copiarpass)
-    document.getElementById('cop').value = "Copiado"
+    navigator.clipboard.writeText(copiarpass.value).then(()=>{document.getElementById('cop').value = "Copiado"; }).catch(err => {console.error("Nao foi possivel copiar", err)})
 }
 
 
